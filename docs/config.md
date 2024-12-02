@@ -28,6 +28,7 @@ The following fields are supported:
     * Typically named `vmlinuz` or `bzImage`
     * If a relative path is provided, it will be interpreted as relative to
       `vmtest.toml`
+    * Should be built with `CONFIG_NET_9P` enabled.
 * `kernel_args` (string)
     * Optional field
     * `kernel` must be specified
@@ -36,7 +37,8 @@ The following fields are supported:
 * `rootfs` (string)
     * Default: `/`
     * `kernel` must be specified
-    * Path to rootfs to test against
+    * Path to rootfs directory to mount in the guest via
+      [v9fs](https://docs.kernel.org/filesystems/9p.html)
     * If a relative path is provided, it will be interpreted as relative to
       `vmtest.toml`
 * `arch` (string)
