@@ -179,6 +179,8 @@ aarch64
 
 For full configuration documentation, see [config.md](./docs/config.md).
 
+For tips on getting a rootfs, see [rotfs.md](./docs/rootfs.md).
+
 ## Usage in Github CI
 
 [vmtest-action](https://github.com/danobi/vmtest-action) is a convenient
